@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Supplier | DK</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #161a22;
+      --accent: #4f8cff;
+      --text: #e6e6e6;
+      --muted: #9aa0aa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: #0b0d12;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #222;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+      background: #222;
+      border-radius: 6px;
+    }
+
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #121621, #0f1115);
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #222;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product img {
+      width: 100%;
+      height: 160px;
+      background: #222;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .product h3 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: var(--muted);
+      flex: 1;
+    }
+
+    .product button {
+      background: var(--accent);
+      border: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product button:hover { opacity: 0.9; }
+
+    footer {
+      border-top: 1px solid #222;
+      padding: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* PRIVACY: Ingen profiler, ingen emails synlige */
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <!-- Erstat denne med dit rigtige logo senere -->
+    <img alt="Logo" />
+    <h1>Gaming Supplier | DK</h1>
+  </div>
+  <nav>
+    <a href="#">Shop</a>
+    <a href="#">Produkter</a>
+    <a href="#">Discord</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Computer supplies til gamers</h2>
+  <p>Gaming Supplier | DK leverer pålidelige computer‑ og gaming supplies. Ingen konti, ingen synlige emails, fuld fokus på privatliv.</p>
+</section>
+
+<main class="container">
+  <div class="products">
+
+    <div class="product">
+      <img alt="Produkt" />
+      <h3>Gaming Mus</h3>
+      <p>Hurtig respons og ergonomisk design.</p>
+      <button>Køb</button>
+    </div>
+
+    <div class="product">
+      <img alt="Produkt" />
+      <h3>Gaming Tastatur</h3>
+      <p>Mekaniske switches med RGB.</p>
+      <button>Køb</button>
+    </div>
+
+    <div class="product">
+      <img alt="Produkt" />
+      <h3>Headset</h3>
+      <p>Klar lyd og støjreduktion.</p>
+      <button>Køb</button>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Gaming Supplier | DK – Alle rettigheder forbeholdt
+</footer>
+
+</body>
+</html>

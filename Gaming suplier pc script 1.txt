@@ -1,0 +1,34 @@
+<div class="product">
+  <img src="logo.png" alt="Gaming Supplier | DK logo" />
+
+  <h3>Faktura Mid End PC</h3>
+
+  <p>
+    Mid-End Gaming PC sammensat til gamere, der ønsker stabil ydelse, flot grafik 
+    og god performance i moderne spil. Perfekt til 1080p (Full HD) gaming.
+  </p>
+
+  <p>
+    AMD Ryzen 5 7400F (6 kerner / 12 tråde) kombineret med NVIDIA GeForce RTX 3050 8GB 
+    giver solid performance i populære titler som Fortnite, CS2, GTA og Warzone.
+  </p>
+
+  <p>
+    <strong>Forventet FPS:</strong><br>
+    Fortnite: 100–140 FPS<br>
+    CS2: 180–250 FPS<br>
+    Valorant: 250+ FPS<br>
+    GTA V: 90–120 FPS<br>
+    Warzone: 70–90 FPS (DLSS)
+  </p>
+
+  <p>
+    <strong>Specifikationer:</strong><br>
+    Ryzen 5 7400F · RTX 3050 8GB · 16GB RAM · NVMe SSD<br>
+    Støjsvag køling · Klar til opgraderinger
+  </p>
+
+  <p><strong>Pris: 8.138,00 kr.</strong><br>Fri fragt</p>
+
+  <button>Køb</button>
+</div>

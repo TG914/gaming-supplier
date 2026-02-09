@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>Gaming Supplier | DK</title>
+
+<style>
+:root {
+  --bg:#0b0d10;
+  --card:#141822;
+  --text:#fff;
+  --muted:#aab;
+  --accent:#3b82f6;
+}
+
+* { box-sizing:border-box; font-family:Arial, sans-serif; }
+
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  border-bottom:1px solid #222;
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img {
+  width:40px;
+  height:40px;
+}
+
+nav a {
+  color:var(--text);
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:bold;
+}
+
+nav a:hover { color:var(--accent); }
+
+.hero {
+  padding:40px;
+  text-align:center;
+}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+.product {
+  background:var(--card);
+  padding:20px;
+  border-radius:12px;
+}
+
+.product h3 { margin-top:0; }
+
+.product button {
+  background:var(--accent);
+  border:none;
+  color:white;
+  padding:12px;
+  width:100%;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.product button:hover { opacity:0.9; }
+
+.checkout {
+  display:none;
+  background:var(--card);
+  padding:20px;
+  border-radius:12px;
+  margin-top:30px;
+}
+
+.checkout input, .checkout select {
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:6px;
+  border:none;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <nav>
+    <a href="#">Shop</a>
+    <a href="https://discord.gg/a9EUz8av" target="_blank">Discord</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Gaming Supplier | DK</h2>
+  <p>Custom gaming-PC’er – bygget til performance</p>
+</section>
+
+<main class="container">
+
+<div class="product">
+  <h3>Mid-End Gaming PC</h3>
+  <p>
+    AMD Ryzen 5 7400F · RTX 3050 8GB · 16GB RAM · NVMe SSD  
+    Perfekt til 1080p gaming – Fortnite, CS2, GTA, Roblox m.fl.
+  </p>
+
+  <p><strong>Pris:</strong> 8.138,00 kr. – Fri fragt</p>
+
+  <button onclick="openCheckout()">Køb</button>
+</div>
+
+<div class="checkout" id="checkout">
+  <h3>Checkout</h3>
+
+  <input placeholder="Fulde navn">
+  <input placeholder="Adresse">
+  <input placeholder="Postnummer">
+  <input placeholder="By">
+  <input placeholder="Land">
+
+  <select>
+    <option>Vælg betaling</option>
+    <option>Dankort (kommer snart)</option>
+    <option>Kreditkort (kommer snart)</option>
+    <option>MobilePay (kommer snart)</option>
+  </select>
+
+  <p style="color:#aaa;font-size:13px;">
+    Betaling håndteres senere via godkendt betalingsudbyder.
+  </p>
+
+  <button>Gå videre</button>
+</div>
+
+</main>
+
+<footer>
+© 2026 Gaming Supplier | DK
+</footer>
+
+<script>
+function openCheckout(){
+  document.getElementById("checkout").style.display="block";
+  window.scrollTo(0, document.body.scrollHeight);
+}
+</script>
+
+</body>
+</html>
